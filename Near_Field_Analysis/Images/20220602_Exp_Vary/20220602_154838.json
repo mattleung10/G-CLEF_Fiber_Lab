@@ -1,0 +1,11 @@
+{
+    "date": "2022-06-02 15:48:38",
+    "number of frames": 1,
+    "exposure_time_us": 100,
+    "total_exposure_time_us": 100,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 12.424033460112087,
+    "actual_final_FPS": 11.696721585775318,
+    "number of frames / actual_final_FPS": 0.0854940414428711,
+    "message": "70mA Laser, MS ON, 7\" shaft_dist, 180deg amplitude, 2s period, 100ms delay, 0 ND"
+}

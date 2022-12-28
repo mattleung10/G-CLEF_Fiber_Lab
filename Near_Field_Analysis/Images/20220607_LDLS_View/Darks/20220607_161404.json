@@ -1,0 +1,11 @@
+{
+    "date": "2022-06-07 16:14:04",
+    "number of frames": 1,
+    "exposure_time_us": 10,
+    "total_exposure_time_us": 10,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 1.6474539176434868,
+    "actual_final_FPS": 1.6313311109321988,
+    "number of frames / actual_final_FPS": 0.6129963397979736,
+    "message": "Bias"
+}

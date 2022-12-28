@@ -1,0 +1,10 @@
+{
+    "date": "2022-04-18 15:37:52",
+    "number of frames": 25,
+    "exposure_time_us": 800,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 22.075136259190163,
+    "actual_final_FPS": 23.894696855585543,
+    "number of frames / actual_final_FPS": 1.0462572574615479,
+    "message": "Rect fiber, 7 inch from shaft, 400000us step delay, +/- 45 deg, step mode 2"
+}

@@ -1,0 +1,18 @@
+June 2022
+
+The following Python libraries are required for this near field analysis code:
+
+Included in Anaconda distribution of Python:
+numpy
+matplotlib
+scipy
+
+cv2 (OpenCV)
+https://pypi.org/project/opencv-python/
+
+PIL (Python Imaging Library)
+https://pillow.readthedocs.io/en/latest/installation.html
+
+pyclipper
+https://pypi.org/project/pyclipper/
+https://anaconda.org/conda-forge/pyclipper

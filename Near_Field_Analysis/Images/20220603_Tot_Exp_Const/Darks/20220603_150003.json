@@ -1,0 +1,11 @@
+{
+    "date": "2022-06-03 15:00:03",
+    "number of frames": 1,
+    "exposure_time_us": 100000,
+    "total_exposure_time_us": 100000,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 7.1698975021709845,
+    "actual_final_FPS": 6.969991657886952,
+    "number of frames / actual_final_FPS": 0.14347219467163086,
+    "message": "Dark"
+}

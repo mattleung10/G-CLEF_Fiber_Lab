@@ -1,0 +1,18 @@
+{
+    "date": "2022-06-27 16:45:46",
+    "number of frames": 100,
+    "exposure_time_us": 350,
+    "total_exposure_time_us": 35000,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 3.178597927628632,
+    "actual_final_FPS": 3.2863630855064194,
+    "number of frames / actual_final_FPS": 30.42877411842346,
+    "message": "70mA Laser, MS ON, 4\" shaft_dist, 2.5Hz Frequency, 0 ND",
+    "pixels_in_hull": 45433,
+    "mean": 1403.762481563317,
+    "mean_err": 0.17577661952449605,
+    "std": 41.936351906541816,
+    "std_err": 0.17554554572612896,
+    "mean/std": 33.473643217505014,
+    "mean/std_err": 0.14018332936507763
+}

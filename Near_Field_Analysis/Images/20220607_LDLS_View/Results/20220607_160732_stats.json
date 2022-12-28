@@ -1,0 +1,15 @@
+{
+    "date": "2022-06-07 16:07:32",
+    "number of frames": 1,
+    "exposure_time_us": 700,
+    "total_exposure_time_us": 700,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 1.6454994301586336,
+    "actual_final_FPS": 1.6374092394875133,
+    "number of frames / actual_final_FPS": 0.6107208728790283,
+    "message": "Rectangular, LDLS",
+    "pixels_in_hull": 48449,
+    "mean": 2433.476790026626,
+    "std": 274.0538791466306,
+    "mean/std": 8.879556084388105
+}

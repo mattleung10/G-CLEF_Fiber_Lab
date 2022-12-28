@@ -1,0 +1,15 @@
+{
+    "date": "2022-06-07 14:16:42",
+    "number of frames": 1,
+    "exposure_time_us": 70,
+    "total_exposure_time_us": 70,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 1.6474552118303378,
+    "actual_final_FPS": 1.6233811874826798,
+    "number of frames / actual_final_FPS": 0.6159982681274414,
+    "message": "Square, LDLS, No ND, Original Direction",
+    "pixels_in_hull": 26319,
+    "mean": 3019.998548577074,
+    "std": 361.59464651776784,
+    "mean/std": 8.351889547205117
+}

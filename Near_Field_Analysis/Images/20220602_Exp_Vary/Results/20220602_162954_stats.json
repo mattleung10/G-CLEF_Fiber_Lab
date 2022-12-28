@@ -1,0 +1,18 @@
+{
+    "date": "2022-06-02 16:29:54",
+    "number of frames": 1,
+    "exposure_time_us": 5000,
+    "total_exposure_time_us": 5000,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 21.695274352395927,
+    "actual_final_FPS": 19.5712919196114,
+    "number of frames / actual_final_FPS": 0.051095247268676765,
+    "message": "70mA Laser, MS OFF, 7\" shaft_dist, 180deg amplitude, 2s period, 100ms delay, 1.5 ND",
+    "pixels_in_hull": 24218,
+    "mean": 914.4750268395408,
+    "mean_err": 0.19431968041442407,
+    "std": 235.63676752249341,
+    "std_err": 0.21222858122087349,
+    "mean/std": 3.880867304599427,
+    "mean/std_err": 0.0035913050904130416
+}

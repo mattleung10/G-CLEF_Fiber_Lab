@@ -1,0 +1,11 @@
+{
+    "date": "2022-06-07 13:51:10",
+    "number of frames": 1,
+    "exposure_time_us": 90,
+    "total_exposure_time_us": 90,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 1.6442724935188449,
+    "actual_final_FPS": 1.625583291734233,
+    "number of frames / actual_final_FPS": 0.6151638031005859,
+    "message": "Circular 200um, LDLS, No ND, FC-FC"
+}

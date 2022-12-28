@@ -1,0 +1,1 @@
+This directory stores the images for each experiment / data collection run

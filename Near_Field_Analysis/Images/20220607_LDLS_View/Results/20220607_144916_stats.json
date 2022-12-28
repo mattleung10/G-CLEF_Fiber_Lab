@@ -1,0 +1,15 @@
+{
+    "date": "2022-06-07 14:49:16",
+    "number of frames": 1,
+    "exposure_time_us": 300,
+    "total_exposure_time_us": 300,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 1.63935415534823,
+    "actual_final_FPS": 1.6233767892522752,
+    "number of frames / actual_final_FPS": 0.6159999370574951,
+    "message": "Circular 600um, LDLS Direct",
+    "pixels_in_hull": 347001,
+    "mean": 2556.5933083766336,
+    "std": 487.08217502576446,
+    "mean/std": 5.248792584621683
+}
