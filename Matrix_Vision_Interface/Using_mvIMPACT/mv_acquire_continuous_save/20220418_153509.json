@@ -1,0 +1,10 @@
+{
+    "date": "2022-04-18 15:35:09",
+    "number of frames": 25,
+    "exposure_time_us": 800,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 22.089541942916004,
+    "actual_final_FPS": 23.900595317600732,
+    "number of frames / actual_final_FPS": 1.0459990501403809,
+    "message": "Rect fiber, mode scrambler off"
+}

@@ -1,0 +1,10 @@
+{
+    "date": "2022-04-13 12:19:51",
+    "number of frames": 25,
+    "exposure_time_us": 700,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 22.12013203769573,
+    "actual_final_FPS": 23.923432313115295,
+    "number of frames * actual_final_FPS": 598.0858078278824,
+    "message": "Mode scrambler off"
+}

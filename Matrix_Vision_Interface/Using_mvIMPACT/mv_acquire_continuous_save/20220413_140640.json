@@ -1,0 +1,10 @@
+{
+    "date": "2022-04-13 14:06:40",
+    "number of frames": 25,
+    "exposure_time_us": 500,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 22.13701312175514,
+    "actual_final_FPS": 23.867181987444745,
+    "number of frames / actual_final_FPS": 1.0474634170532227,
+    "message": "4 inch from shaft, 100000 step delay, plus minus 45 degrees, step mode 2"
+}

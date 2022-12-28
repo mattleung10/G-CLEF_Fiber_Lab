@@ -1,0 +1,10 @@
+{
+    "date": "2022-04-18 16:37:27",
+    "number of frames": 25,
+    "exposure_time_us": 450,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 22.161209252694345,
+    "actual_final_FPS": 23.9234159386163,
+    "number of frames / actual_final_FPS": 1.0450012683868408,
+    "message": "Square fiber, mode scrambler off"
+}

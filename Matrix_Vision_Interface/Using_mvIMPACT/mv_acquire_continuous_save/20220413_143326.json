@@ -1,0 +1,10 @@
+{
+    "date": "2022-04-13 14:33:26",
+    "number of frames": 1,
+    "exposure_time_us": 2000,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 23.649734143027104,
+    "actual_final_FPS": 21.148533223077155,
+    "number of frames / actual_final_FPS": 0.047284603118896484,
+    "message": "Mode scrambler off, twisted looping through holes, LDLS"
+}

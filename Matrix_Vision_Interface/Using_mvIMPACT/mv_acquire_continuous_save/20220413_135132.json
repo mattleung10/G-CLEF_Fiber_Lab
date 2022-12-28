@@ -1,0 +1,10 @@
+{
+    "date": "2022-04-13 13:51:32",
+    "number of frames": 25,
+    "exposure_time_us": 700,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 22.14558733836228,
+    "actual_final_FPS": 23.923536018796124,
+    "number of frames / actual_final_FPS": 1.0449960231781006,
+    "message": "Mode scrambler off, fiber 6 inch from shaft"
+}

@@ -1,0 +1,10 @@
+{
+    "date": "2022-04-13 14:11:13",
+    "number of frames": 25,
+    "exposure_time_us": 500,
+    "user_set_FPS": 25,
+    "actual_mean_FPS": 22.14714194427182,
+    "actual_final_FPS": 23.923492353136716,
+    "number of frames / actual_final_FPS": 1.0449979305267334,
+    "message": "Mode scrambler off, 3 inch from shaft"
+}
