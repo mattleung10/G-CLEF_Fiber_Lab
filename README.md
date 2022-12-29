@@ -1,9 +1,9 @@
-# G-CLEF Fiber Lab Code
+# G-CLEF Fiber Lab
 This repository contains code for the <b>[G-CLEF](https://gclef.cfa.harvard.edu/) Fiber Research Laboratory</b> at the [Center for Astrophysics | Harvard & Smithsonian (CfA)](https://cfa.harvard.edu/).
 
 ## Introduction
 
-During the 2021-2022 school year, I completed a co-op/gap year research internship at the [Center for Astrophysics | Harvard & Smithsonian (CfA)](https://cfa.harvard.edu/), where I worked on [G-CLEF (GMT-Consortium Large Earth Finder)](https://gclef.cfa.harvard.edu/), a precision [radial velocity](https://en.wikipedia.org/wiki/Doppler_spectroscopy) echelle spectrograph which will be the first light instrument for the [Giant Magellan Telescope (GMT)](https://giantmagellan.org/). G-CLEF will search for and characterize Earth-like exoplanets.
+During the 2021-2022 school year, I completed a co-op/gap year research internship at the [Center for Astrophysics | Harvard & Smithsonian (CfA)](https://cfa.harvard.edu/), where I worked on [G-CLEF (GMT-Consortium Large Earth Finder)](https://gclef.cfa.harvard.edu/), a precision [radial velocity (RV)](https://en.wikipedia.org/wiki/Doppler_spectroscopy) echelle spectrograph which will be the first light instrument for the [Giant Magellan Telescope (GMT)](https://giantmagellan.org/). G-CLEF will search for and characterize Earth-like exoplanets.
 
 The project I worked on within G-CLEF was a prototype <b>optical fiber mode scrambler</b> which agitates the fibers feeding the spectrograph from the GMT, in order to mitigate a phenomenon called modal noise which is detrimental to exoplanet detection. There are two parts to this project:
 1) Designing and building a Fiber Characterization Station (FCS) which is used to determine certain metrics of optical fibers
@@ -43,13 +43,23 @@ Custom GUI tools were developed to help with the optical alignment progress:
 
 The latter two GUIs were created using the [PyQtGraph Python library](https://www.pyqtgraph.org/), and are shown below.
 <p float="center">
-  <img src="https://github.com/mattleung10/G-CLEF_Fiber_Lab/blob/master/Summary/Images/FCS_overall_labelled.png" width="49%" />
-  <img src="https://github.com/mattleung10/G-CLEF_Fiber_Lab/blob/master/Summary/Images/FCS_View.jpg" width="49%" />
+  <img src="https://github.com/mattleung10/G-CLEF_Fiber_Lab/blob/master/Matrix_Vision_Interface/Using_Harvester/GUI_Demo/20220316_Near_Field_GUI_Demo.png" width="49%" />
+  <img src="https://github.com/mattleung10/G-CLEF_Fiber_Lab/blob/master/Matrix_Vision_Interface/Using_Harvester/GUI_Demo/20220315_Far_Field_GUI_Demo.png" width="49%" />
 </p>
+
+Note that due to size constraints, images taken by the cameras were not included in this repository.
 
 ## Optical Fiber Mode Scrambler
 
-TBD
+### Background on Modal Noise
+
+When coherent light propagates through a multi-mode optical fiber, the modes interfere at the fiber exit boundary, producing a high contrast speckle interference pattern called modal noise. This non-uniform interference pattern is a problem which particularly affects fiber-fed precision RV spectrographs like G-CLEF, leading to systematic errors and lower signal-to-noise ratios in measurements. To mitigate the effects of modal noise, a device called an optical fiber mode scrambler is used. A mode scrambler dynamically agitates a fiber, so that the interference pattern will change over time and be smoothed out over long exposures, destroying the modal information in the fiber.
+
+### Design
+
+
+
+### Analysis Code
 
 ## Repository Directories
 
