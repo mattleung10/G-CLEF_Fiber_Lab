@@ -27,6 +27,11 @@ The FCS design consists of four arms:
 
 Three cameras were used. 
 
+<p float="center">
+  <img src="https://github.com/mattleung10/G-CLEF_Fiber_Lab/blob/master/Summary/Images/FCS_overall_labelled.png" width="49%" />
+  <img src="https://github.com/mattleung10/G-CLEF_Fiber_Lab/blob/master/Summary/Images/FCS_View.jpg" width="49%" />
+</p>
+
 ## Optical Fiber Mode Scrambler
 
 TBD
