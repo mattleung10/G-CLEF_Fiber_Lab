@@ -34,7 +34,7 @@ The FCS design consists of four arms:
 
 ### Camera Control Software
 
-Three cameras are used in the FCS. A Pixelink PL-B781U CMOS camera is used for the injection imaging arm, and two Matrix Vision mvBlueCOUGAR-X102kG CMOS cameras are used for the near field arm and far field arm. Custom camera control code was written to control the cameras. The Pixelink camera is controlled using the script ```pixelink_class.py``` (in the ```Pixelink_Interface``` directory), which is a class which wraps the routines in the [pixelinkWrapper Python library](https://github.com/pixelink-support/pixelinkPythonWrapper). The Matrix Vision cameras are controlled using the mvIMPACT Python library (using the [mvIMPACT Acquire Python SDK](https://www.matrix-vision.com/manuals/SDK_PYTHON/)) and [Harvester Python library](https://github.com/genicam/harvesters). For more details, see the ```README.txt``` file inside the ```Matrix_Vision_Interface``` directory.
+Three cameras are used in the FCS. A Pixelink PL-B781U CMOS camera is used for the injection imaging arm, and two Matrix Vision mvBlueCOUGAR-X102kG CMOS cameras are used for the near field arm and far field arm. Custom camera control code was written to control the cameras. The Pixelink camera is controlled using the script ```pixelink_class.py``` (in the ```Pixelink_Interface``` directory), which is a class which wraps the routines in the [pixelinkWrapper Python library](https://github.com/pixelink-support/pixelinkPythonWrapper). The Matrix Vision cameras are controlled using the mvIMPACT Python library (using the [mvIMPACT Acquire Python SDK](https://www.matrix-vision.com/manuals/SDK_PYTHON/)) and [Harvester Python library](https://github.com/genicam/harvesters). For more details, see the ```README.txt``` file inside the ```Matrix_Vision_Interface``` directory. Note that the Matrix Vision cameras acquire images in 12 bit, but the final images are saved as a 16 bit file.
 
 Custom GUI tools were developed to help with the optical alignment progress:
 1) GUI for aligning the injection imaging arm (```pixelink_class_gaussian_fit.py``` in the ```Pixelink_Interface``` directory)
@@ -55,11 +55,25 @@ Note that due to size constraints, images taken by the cameras were not included
 
 When coherent light propagates through a multi-mode optical fiber, the modes interfere at the fiber exit boundary, producing a high contrast speckle interference pattern called modal noise. This non-uniform interference pattern is a problem which particularly affects fiber-fed precision RV spectrographs like G-CLEF, leading to systematic errors and lower signal-to-noise ratios in measurements. To mitigate the effects of modal noise, a device called an optical fiber mode scrambler is used. A mode scrambler dynamically agitates a fiber, so that the interference pattern will change over time and be smoothed out over long exposures, destroying the modal information in the fiber.
 
+Most fiber mode scramblers mechanically agitate the fiber in order to mitigate modal noise. However, the generality of mode scramblers in the literature are limited, because they are often specific to a given instrument. Different mode scramblers in the literature mechanically agitate a fiber in different ways, for example by shaking, bending, rotating, or twisting. However, there has not been much research into the best way to agitate a fiber so that the highest amount of modal noise is reduced. My internship project aimed to investigate this.
+
 ### Design
 
+In this project, the mechanical design of the mode scrambler prototype consists of a [four-bar linkage](https://en.wikipedia.org/wiki/Four-bar_linkage) crank-rocker. Two stepper motors are used, which are controlled by an Arduino (see the ```Arduino_Code``` directory). An electrical schematic is shown below. For more details, please see the report linked in the Introduction.
+<p float="center">
+  <img src="https://github.com/mattleung10/G-CLEF_Fiber_Lab/blob/master/Summary/Images/Mode_Scrambler_Prototype_V1.2-1.png" width="49%" />
+</p>
 
+### Analysis Code and Testing
 
-### Analysis Code
+Custom software was written to analyze the images taken by the cameras described above, when the mode scrambler was ON and OFF. To test the mode scrambler, images of the fiber near field were analyzed, and the signal-to-noise ratio (SNR) of the pixels inside the fiber boundary was used as a metric for mode scrambling (for more details, please see the report linked in the Introduction). Various experiments were conducted, in which a particular parameter was varied (e.g. mode scrambler motor frequency) and its effect on SNR was investigated.
+
+Images of the near field are considered as "science frames". In addition to these, dark frames, bias frames, and flat field frames were alos taken. After obtaining a corrected image (dark and bias subtracted, and flat field corrected), the main goal is to identify the boundary of the test fiber's face in the corrected image. Then SNR and other metrics can be computed from the pixels inside the fiber face boundary. The process for identifying the boundary of the fiber face is non-trivial, because the mode scrambler was tested on fibers of different shapes (e.g. circular, square, octagonal, rectangular). To find the boundary of the fiber face, the [alpha shape](https://graphics.stanford.edu/courses/cs268-11-spring/handouts/AlphaShapes/as_fisher.pdf) was found. The process is summarized below:
+
+1) Apply Canny edge detector to an 8 bit version of the corrected image, and obtain a binary image which represents the Canny edges.
+2) Take the nonzero points from the binary image, and find the alpha shape of these points.
+3) Find the outer boundary of the alpha shape.
+4) If desired, offset the alpha shape.
 
 ## Repository Directories
 
